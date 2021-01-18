@@ -1,0 +1,164 @@
+:root {
+    --bg-light: #e5ebe7;
+    --bg-info: #A3D9EA;
+    --bg-success: #A3EAD4;
+    --bd-light: white;
+    --accent-color: #CEAFE7;
+    --text-light: rgba(46, 34, 34, 0.25);
+    --text-lighter: #c4c4c4;
+    --text-dimmed: #9D94A3;
+  }
+  /* :root {
+    --bg-light: #181d1d;
+    --bd-light: rgb(0, 0, 0);
+    --accent-color: #CEAFE7;
+    --text-light: rgba(252, 247, 247, 0.986);
+    --text-lighter: #c4c4c4;
+  } */
+  
+  #root{
+    height: 100vh;
+    width: 100vw;
+  }
+  .loading-cont{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  @keyframes fading{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spin{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .gw-accent-color{
+    color: var(--accent-color) !important;
+  }
+  
+  .loading{
+    animation: fading 1s infinite alternate-reverse;
+  }
+  
+  .spinning{
+    animation: spin 1500ms infinite linear;
+  }
+  
+  .gw-success-color {
+    color: #A3EAD4;
+  }
+  
+  .gw-danger-color{
+    color: #F8BDBD !important;
+  }
+  
+  .gw-info-color{
+    color: #A3D9EA !important;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-light);
+    /* color: var(--text-light) */
+  }
+  
+  .heading-1, .heading-3, .heading-4, .heading-5, .heading-6, .brand-name {
+    font-family: "Lora";
+  }
+  
+  .heading-1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1em;
+  }
+  
+  .inner-shadow {
+    box-shadow: inset 3px -3px 12px rgba(0, 0, 0, .35), inset -10px 10px 20px white;
+  }
+  
+  .btn-gw-primary {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 12px;
+  }
+  .btn-gw-primary-outline {
+    background-color: var(--bg-light);
+    color: var(--accent-color);
+    border-radius: 12px;
+    border: 2px solid var(--accent-color);
+  }
+  
+  .btn-gw-secondary {
+    color: var(--accent-color);
+    background-color: var(--bg-light);
+    border-radius: 12px;
+  }
+  .btn-gw-info {
+    color: white;
+    background-color: var(--bg-info);
+    border-radius: 12px;
+  }
+  .btn-gw-success {
+    color: white;
+    background-color: var(--bg-success);
+    border-radius: 12px;
+  }
+  
+  .btn-gw-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .brand-name {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--bg-light);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16), -2px -2px 5px white;
+  }
+  
+  .inner-shadow-sm {
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+  }
+  
+  .inner-shadow-xs {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .35), inset -2px -2px 2px white;
+  }
+  
+  .outer-shadow-sm {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25), -2px -2px 3px white;
+  }
+  .outer-shadow-lg {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25), -5px -5px 5px white;
+  }
+  
+  
+  .gw-label{
+    font-size: 10px;
+    color: var(--text-light);
+    display: inline-block;
+    margin-bottom: 30px
+  }
+  
+  .gw-select{
+    background: var(--bg-light);
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  

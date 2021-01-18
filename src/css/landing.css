@@ -1,0 +1,55 @@
+p {
+    line-height: 2.3em;
+}
+
+h1 {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.tag-line {
+    margin-bottom: 2rem;
+}
+
+.right-col-landing {
+    position: relative;
+    display: flex;
+}
+
+.diamond {
+    position: absolute;
+    background-color: var(--bg-light);
+    border-radius: 15px;
+    transform: rotate(-45deg);
+    margin: 0 auto;
+}
+
+.diamond-1 {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    left: 25%;
+}
+
+.diamond-2 {
+    width: 220px;
+    height: 220px;
+    left: 43%;
+    top: 50%;
+}
+
+.diamond-3 {
+    width: 120px;
+    height: 120px;
+    left: 52%;
+    top: 73%;
+}
+
+@media screen and (max-width:600px) {
+    .heading-1 {
+        font-size: 3rem;
+    }
+    .header {
+        margin: 0 1rem;
+    }
+}

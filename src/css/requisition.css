@@ -1,0 +1,467 @@
+.fa-pen {
+    color: var(--accent-color);
+  }
+  
+  .requisition-section {
+    border-radius: 35px;
+  }
+  
+  
+  
+  #tabs {
+    background-color: var(--bg-light);
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Lora";
+  }
+  
+  .nav-item {
+    padding: .3em .8em;
+    width: max-content;
+    margin: 0 auto ;
+  }
+  
+   .nav-link {
+    padding: .5em 1.5em;
+    margin: 0 auto;
+    width: max-content;
+    font-size: 1em;
+    transition: box-shadow 900ms linear;
+  }
+  
+  .nav-link {
+    background: none;
+    border-radius: 7px;
+    border: none;
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+  }
+  
+   .nav-link i {
+    color: var(--accent-color);
+  }
+  
+  .progress-circle {
+    background: none;
+    padding: 1em 0;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .circle {
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 50%;
+    margin: 0 1em;
+    display: grid;
+    place-content: center;
+  }
+  
+  .current a div.circle {
+    background: var(--accent-color);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .35), inset -1px -1px 1px white;
+  }
+  
+  input[type=text], input[type=number], select, textarea {
+    width: 100%;
+    padding: 2em auto;
+    border-radius: 5px;
+    background-color: none;
+  }
+  
+  input[type=file] {
+    display: none;
+  }
+  
+  .file-label {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  .file-label i {
+    color: var(--accent-color);
+  }
+  
+  .uploaded-files-container {
+    display: inline-flex;
+    width: 200%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .uploaded {
+    display: inline-block;
+    width: 240px;
+    padding: 10px 7px;
+    margin: 5px 5px;
+    border-radius: 5px;
+  }
+  
+  .uploaded input {
+    width: 150px;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .35), inset -1px -1px 2px white;
+    border: none;
+    background-color: var(--bg-light);
+  }
+  
+  .uploaded input[type=text]:focus {
+    border: none;
+  }
+  
+  .uploaded input:disabled {
+    box-shadow: none;
+  }
+  
+  .uploaded-actions {
+    display: inline-block;
+  }
+  
+  .form-group input[type=text]:focus, .form-group input[type=number]:focus, select:focus, textarea.form-control:focus {
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--bg-light);
+  }
+  
+  .col input {
+    height: 40px;
+  }
+  
+  .col input:focus {
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--bg-light);
+  }
+  
+  input[type=text]:focus~label, select:focus~label, textarea:focus~label {
+    color: var(--accent-color);
+  }
+  
+  .form-control {
+    background-color: var(--bg-light);
+    height: 40px;
+    font-family: "Roboto";
+    border: none;
+    border-radius: 10px;
+  }
+  
+  select.custom-select {
+    height: 40px;
+    background-color: var(--bg-light);
+  }
+  
+  .form-control:focus, select.custom-select:focus {
+    border: none;
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+    background-color: var(--bg-light);
+  }
+  
+  .form-group label {
+    margin: 5px 0;
+    color: var(--text-lighter);
+  }
+  
+  .btn {
+    border-radius: 20px;
+  }
+  
+  .btn-input-secondary-sm {
+    width: 100px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+  }
+  
+  .progress {
+    height: 2em;
+  }
+  
+  .progress-bar {
+    transition: width 200ms linear;
+    height: 2em;
+    background-color: var(--accent-color);
+  }
+  
+  .custom-control .custom-control-label::before, .custom-control .custom-control-label::after {
+    right: -3rem;
+    left: initial;
+  }
+  
+  .custom-control-label {
+    font-size: 1.em;
+    margin-top: 1.5em;
+    line-height: 1.2em;
+    color: var(--text-lighter);
+  }
+  
+  .custom-control {
+    padding-left: 5px;
+  }
+  
+  .custom-control-label::before, .custom-control-label::after {
+    margin-top: .3em;
+    padding: 15px;
+    background-color: var(--bg-light);
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .35), inset -2px -2px 2px white;
+    border-radius: 3px;
+  }
+  
+  .item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+  }
+  
+  .item-list div input {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .35), inset -1px -1px 2px white;
+    border: none;
+    background-color: var(--bg-light);
+    margin-right: 10px;
+  }
+  
+  .item-list div input:disabled, .item-list div select:disabled {
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    background-color: var(--bg-light);
+  }
+  
+  .item-list, .item-list div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item-list-actions {
+    display: flex;
+    padding: 0
+  }
+  
+  .item-list-actions button {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 5px 20px
+  }
+  
+  /* requisition beneficiary */
+  
+  .search-sm {
+    max-width: 150px;
+    border: none;
+    height: 30px;
+    font-size: 12px;
+    padding: 2px 10px
+  }
+  
+  input[type=text].search-sm:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .beneficiaries-scroll {
+    overflow-x: scroll;
+  }
+  
+  .beneficiaries {
+    width: 100em;
+    padding: 10px 5px
+  }
+  
+  .beneficiaries .card {
+    max-width: 150px;
+    padding: .5em;
+    background-color: var(--bg-light);
+  }
+  
+  .beneficiaries .card p {
+    font-size: .7em;
+  }
+  
+  .attendees-avatar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  /* chat styles */
+  
+  .chat-main-container{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+  }
+  .chat-container{
+    height: 85%;
+    overflow-y: scroll;
+  }
+  
+  .chat{
+    max-width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chat-avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  
+  }
+  .av-container{
+    display: grid;
+    place-items: center;
+    margin: 5px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    padding:2px;
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+  }
+  
+  
+  .send-container{
+    justify-self: end;
+  }
+  .chat-send-button{
+    display: grid;
+    place-content: center;
+    margin: 0 20px;
+    width: 60px;
+    height: 40px;
+  }
+  .chat-bubble{
+    border-radius: 10px;
+  }
+  .chat-bubble div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+  }
+  .right.chat{
+   margin-left: auto;
+  }
+  .chat-bubble div h5{
+    font-size: 16px;
+    font-family: "Lora" ;
+    font-weight: bold;
+    margin: 0;
+  
+  }
+  .chat-bubble div span{
+    font-size: 12px;
+    color: var(--accent-color)
+  }
+  .chat-bubble .chat-message{
+    margin: 0;
+    font-size: 14px;
+    padding: 3px 5px;
+    line-height: 1.9;
+  }
+  .user-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .user-list img{
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+  }
+  .user-list p{
+    margin: 2px 0;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .user-list.selected img{
+    border: 5px solid var(--accent-color);
+  }
+  .user-list-cont{
+    overflow-x: scroll;
+  }
+  .attendees-avatar{
+    width: 150em;
+  }
+
+  .form-error{
+    margin: 5px 0px;
+    color: red;
+  }
+
+  .error-list-item{
+    color: rgb(207, 108, 108);
+  }
+  @media screen and (max-width:600px){
+    .chat{
+      max-width: 90%;
+      
+    }
+    #tabs {
+      width: 80%;
+    }
+    .nav-tabs .nav-link {
+      padding: .5em .5em;
+      margin: 0;
+      width: max-content;
+      font-size: .8em;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    #tabs {
+      width: 70%;
+    }
+    .chat-bubble div h5{
+      font-size: 12px;
+   
+    
+    }
+    .chat-bubble div span{
+      font-size: 10px;
+      color: var(--accent-color)
+    }
+    .chat-bubble .chat-message{
+      margin: 0;
+      font-size: 11px;
+      padding: 3px 5px;
+      line-height: 1.9;
+    }
+    .chat-avatar{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    
+    }
+    .av-container{
+      width: 52px;
+      height: 52px;
+      
+    }
+    .form-check {
+      padding-left: 0;
+    }
+    .beneficiaries {
+      width: 150em;
+      padding: 10px 5px
+    }
+  }
+  
