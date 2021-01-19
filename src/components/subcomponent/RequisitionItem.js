@@ -18,7 +18,9 @@ const RequisitionItem = (props)=>{
         pending: 'status',
         checked: 'Finance Checked',
         reviewed: 'Reviewer Checked',
-        sentBack: 'status'
+        sentBack: 'status',
+        uploaded: 'status',
+        paymentMade: 'status'
     }
     let statusRender = {
         approved: approvedBy ? approvedBy.name : '',
@@ -26,7 +28,9 @@ const RequisitionItem = (props)=>{
         pending: status,
         checked: checkedBy ? checkedBy.name: '',
         reviewed: reviewedBy? reviewedBy.name: '',
-        sentBack: status
+        sentBack: status,
+        uploaded: status,
+        paymentMade: "Payment Made"
     }
     let reqDate = new dayjs(Math.abs(date)).format('D MMM, YY');
     let curr = currencyCodes[currency];
@@ -62,10 +66,10 @@ const RequisitionItem = (props)=>{
                     </div>) : (
                         <div className="col-lg-3 d-flex align-items-center action-container">
 
-                            {status == 'approved' ? <button className="action-btn btn btn-gw-circle outer-shadow"><i className="fas fa-check success-icon"></i></button> : <Link to={`home/edit/${props.index}`} className="action-btn btn btn-gw-circle outer-shadow"><i className="fas fa-pen"></i></Link>}
+                            {status == 'approved' || status == 'paymentMade' || status == 'uploaded'  ? <button className="action-btn btn btn-gw-circle outer-shadow"><i className="fas fa-check success-icon"></i></button> : <Link to={`home/edit/${props.index}`} className="action-btn btn btn-gw-circle outer-shadow"><i className="fas fa-pen"></i></Link>}
 
 
-                            {status == 'approved' ? <button className="action-btn btn btn-gw-circle outer-shadow"><i className="fas fa-print print-icon"></i></button> : <button className="action-btn btn btn-gw-circle outer-shadow" onClick = {()=>{setPrompt(true)}}><i className="fas fa-trash del-icon"></i></button>}
+                            {status == 'approved' || status == 'paymentMade' || status == 'uploaded' ? <button className="action-btn btn btn-gw-circle outer-shadow"><i className="fas fa-print print-icon"></i></button> : <button className="action-btn btn btn-gw-circle outer-shadow" onClick = {()=>{setPrompt(true)}}><i className="fas fa-trash del-icon"></i></button>}
 
                             <Link to = {`home/conversation/${id}`} className="action-btn btn btn-gw-circle outer-shadow">
                                 <i className="fas fa-bell"></i>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\gwapp-2.1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "gwapp-2.1"
+	}
+}

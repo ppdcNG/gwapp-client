@@ -13,8 +13,9 @@ const InvoiceUploader  = (props)=>{
     var[isUploading, setIsUploading] = useState(false);
     let uploadInput = useRef(null)
     const uploadFile=(e)=>{
-        setIsUploading(true);
         let file = uploadInput.current.files[0];
+        if(!file) return
+        setIsUploading(true);
         let ext = file.name.split('.').pop();
         let filename = "" + new Date().getTime() + '.'+ ext;
         let storageBucket = firebase.storage().ref(`invoices/${filename}`);
@@ -42,7 +43,7 @@ const InvoiceUploader  = (props)=>{
     }
     return (
         <>
-        <h5 className="py-3 heading-5">Receipts</h5>
+        <h5 className="py-3 heading-5">Receipts/Invoices</h5>
 
             <div className="form-row pb-3">
                 <div className="col-8 col-lg-9 py-2">

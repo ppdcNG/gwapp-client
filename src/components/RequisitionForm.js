@@ -32,6 +32,7 @@ const RequisitionForm = (props)=>{
         currency: 'NGN',
         amountInWords: '',
         bankName: '',
+        type: 'Fund Req',
         accountName : '',
         accountNumber: '',
         invoices: [],
